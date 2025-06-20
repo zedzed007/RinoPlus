@@ -1,8 +1,4 @@
-Absolutely\! Here's the HTML code for the "My First 100 English Words: Listen & Understand\!" course. You can save this as an HTML file and open it in any web browser for easy reference while teaching your daughter.
 
------
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
