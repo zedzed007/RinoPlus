@@ -1,9 +1,14 @@
+Absolutely\! Here's the HTML code for the "My First 100 English Words: Listen & Understand\!" course. You can save this as an HTML file and open it in any web browser for easy reference while teaching your daughter.
+
+-----
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My English Adventure Quest! - English Course for Kids</title>
+    <title>My First 100 English Words: Listen & Understand!</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -51,6 +56,7 @@
             font-size: 1.2em;
             color: #28a745;
             margin-top: 20px;
+            margin-bottom: 10px;
         }
         p {
             margin-bottom: 10px;
@@ -79,23 +85,29 @@
             display: inline-block; /* To keep English inline if it's a small parenthetical */
             margin-left: 5px;
             color: #555;
+            font-weight: normal; /* Arabic part of word list should not be bold */
         }
-        .material-list {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+        .word-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
         }
-        .material-list li {
-            background-color: #e9f7ef;
+        .word-item {
+            background-color: #f8f9fa;
+            border: 1px solid #e2e6ea;
             padding: 10px 15px;
             border-radius: 5px;
-            border: 1px solid #d4edda;
             font-weight: bold;
-            color: #28a745;
+            color: #495057;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .word-item .arabic {
+            font-weight: normal; /* Ensure Arabic is not bold here either */
+            text-align: left; /* Adjust for better alignment in grid */
+            direction: ltr; /* Override rtl for inline display within an English-dominant list item */
         }
         .activity-item {
             background-color: #f8f9fa;
@@ -122,174 +134,339 @@
             border-radius: 5px;
             color: #856404;
         }
+        .session-flow {
+            border: 1px dashed #a7d9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #f0f8ff;
+        }
+        .session-flow h4 {
+            color: #007bff;
+            text-align: left;
+            margin-top: 0;
+        }
+        .session-flow ul {
+            list-style-type: decimal;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My English Adventure Quest!</h1>
-        <h1><span class="arabic">رحلة مغامراتي الإنجليزية!</span></h1>
+        <h1>My First 100 English Words: Listen & Understand!</h1>
+        <h1><span class="arabic">كلماتي الإنجليزية الـ100 الأولى: استمعي وافهمي!</span></h1>
 
-        <p>This course is designed as a fun, interactive game for your daughter, focusing on listening and speaking English, with gentle Arabic support.</p>
+        <p>This course introduces your daughter to the **most frequently used English words**, paired with their clear Arabic meanings. The focus is on **auditory recognition** (listening and understanding) and **visual association** (seeing the object/action).</p>
 
-        <h2>Game Goal:</h2>
-        <p>To collect "English Stars" by listening to instructions, making actions, and exploring new English words, all while having fun with Mommy!</p>
+        <h2>Course Goal:</h2>
+        <p>To enable your daughter to recognize and understand 100 common English words when she hears them, bridging understanding with familiar Arabic.</p>
 
-        <h2>How to Play:</h2>
-        <p>Each session is a "Mini-Quest." Your daughter is the "English Explorer," and you are the "Quest Guide." For every successful interaction (even just listening and doing the action), she earns an imaginary "English Star" and gets lots of praise!</p>
+        <h3>Core Philosophy:</h3>
+        <ul>
+            <li><strong>Listen First:</strong> The primary goal is for her to understand the English word.</li>
+            <li><strong>Visual Aid:</strong> Always show a flashcard, a real object, or perform an action as you say the word.</li>
+            <li><strong>Direct Translation (Spoken):</strong> Immediately follow the English word with its Arabic equivalent (spoken by you) to ensure understanding.</li>
+            <li><strong>Repetition:</strong> Frequent, short exposures are key.</li>
+            <li><strong>No Pressure to Speak:</strong> She doesn't need to say the words yet, just understand them.</li>
+        </ul>
+
+        <p><strong>Session Frequency:</strong> 10-15 minutes, 3-5 times a week. Focus on introducing 5-10 new words per session, and then reviewing old ones.</p>
 
         <h3>Materials Needed:</h3>
-        <ul class="material-list">
-            <li>Imaginary "English Stars" (drawings, stickers, or just words)</li>
-            <li>Flashcards/Pictures (body parts, colors, animals, family)</li>
-            <li>Real Objects (toys, clothes, food items)</li>
-            <li>Music/Sound Device (for songs & animal sounds)</li>
-            <li>A "Magic Bag/Box" (optional, but fun!)</li>
-            <li>Your Enthusiasm!</li>
-        </ul>
-
-        <div class="note">
-            <p><strong>Important Note on Arabic Use:</strong></p>
-            <ul>
-                <li><strong>Minimal and Brief:</strong> Use Arabic only when absolutely necessary to clarify a new concept or instruction. Do not translate every word.</li>
-                <li><strong>Bridge, Not Crutch:</strong> The goal is to build direct association with English, not to rely on Arabic translation.</li>
-                <li><strong>No Reading/Writing Arabic:</strong> Since she can't read, the Arabic will be spoken by you.</li>
-            </ul>
-        </div>
-
-        <h2>Game Structure: Mini-Quests (Approx. 15-20 minutes each)</h2>
-        <p>Each Mini-Quest will follow a similar flow:</p>
-
-        <h3>1. Quest Start! (2-3 min)</h3>
         <ul>
-            <li><strong>"Adventure Call" Song:</strong> Sing a simple "Hello" song.</li>
-            <li><strong>Quest Guide (You):</strong> "Hello, my English Explorer! Are you ready for our English Adventure Quest today? Let's get our energy ready!" <span class="arabic">(مرحباً يا مستكشفتي الإنجليزية! هل أنتِ مستعدة لمهمتنا الإنجليزية اليوم؟)</span></li>
-            <li><strong>Energy Check (TPR):</strong> "Simon Says, jump up high!" (You do it first). "Simon Says, wiggle!" "Simon Says, clap your hands!" (Briefly repeat past TPR actions).</li>
-            <li><strong>Give first "English Star":</strong> "Great energy! You earned an English Star!"</li>
+            <li><strong>Flashcards with clear pictures</strong> for each word (or real objects).</li>
+            <li>Your clear pronunciation.</li>
         </ul>
 
-        <h3>2. Discovery Challenge! (5-7 min)</h3>
-        <ul>
-            <li><strong>Quest Guide:</strong> "Today, our challenge is about [e.g., 'our body parts!' or 'colors!']. Listen carefully!"</li>
-            <li><strong>New Vocabulary Introduction (TPR focus):</strong>
-                <ul>
-                    <li>Hold up a flashcard/point to real object/point to yourself. Say the English word clearly.</li>
-                    <li><strong>Action First:</strong> "Touch your nose!" (You touch your nose, she copies). "You found your nose! English Star!"</li>
-                    <li><strong>Arabic Support (if needed):</strong> If she looks confused, immediately point and say the English word again, then briefly and softly say the Arabic word (e.g., "nose - <span class="arabic">أنف</span>"), and immediately back to English. "Now, touch your ears!"</li>
-                    <li><strong>Repeat:</strong> Do this for 2-3 new words/actions for the day, repeating them several times with actions.</li>
-                </ul>
-            </li>
-        </ul>
+        ---
 
-        <h3>3. Sing & Play Challenge! (5-7 min)</h3>
-        <ul>
-            <li><strong>Quest Guide:</strong> "Let's sing and play to earn more English Stars!"</li>
-            <li><strong>Themed Song:</strong> Play a song related to the unit's vocabulary (e.g., "Head, Shoulders, Knees and Toes" for body parts; a color song). You sing and do the actions with her. "Wow, you sang and moved! English Star!"</li>
-            <li><strong>Simple Game/Activity:</strong>
-                <ul>
-                    <li>**For Colors:** "I spy with my little eye something red!" (She points to something red. "Yes! A red [toy]! English Star!").</li>
-                    <li>**For Animals:** Make an animal sound. "What animal is this?" (She imitates sound or points to flashcard. "It's a dog! Woof woof! English Star!").</li>
-                    <li>**For Family:** Show a family photo. "Who is this?" (Point to Mommy. "It's Mommy! English Star!").</li>
-                    <li>**For Counting:** "Let's count our fingers! One, two, three..." (Count together, touching each finger. "You counted so well! English Star!").</li>
-                </ul>
-            </li>
-        </ul>
+        <h2>Course Structure: 10 Thematic Sets (10 words each)</h2>
+        <p>We'll group the words thematically for easier learning. Introduce new words gradually, and constantly review previous sets.</p>
 
-        <h3>4. Quest Wrap-Up! (1-2 min)</h3>
-        <ul>
-            <li><strong>Review (briefly):</strong> "We learned about [e.g., 'our happy face'] and [e.g., 'the red ball'] today! You are such a good listener!"</li>
-            <li><strong>Positive Reinforcement:</strong> "You earned so many English Stars today! You are an amazing English Explorer!"</li>
-            <li><strong>Adventure Farewell Song/Rhyme:</strong> A simple goodbye song.</li>
-            <li><strong>Quest Guide:</strong> "Goodbye, my English Explorer! See you on our next quest!" <span class="arabic">(مع السلامة يا مستكشفتي الإنجليزية! نراكِ في مهمتنا القادمة!).</span></li>
-        </ul>
-
-        <h2>Unit-Specific Mini-Quests (Examples):</h2>
-
-        <h3>Unit 1: Hello & My World! (Weeks 1-2)</h3>
-        <h4>Vocabulary:</h4>
-        <p>Hello (<span class="arabic">مرحباً</span>), Goodbye (<span class="arabic">مع السلامة</span>), My name is... (<span class="arabic">اسمي هو...</span>), eyes (<span class="arabic">عيون</span>), nose (<span class="arabic">أنف</span>), mouth (<span class="arabic">فم</span>), ears (<span class="arabic">آذان</span>), hands (<span class="arabic">يدين</span>), feet (<span class="arabic">قدمين</span>), head (<span class="arabic">رأس</span>), touch (<span class="arabic">المس</span>), clap (<span class="arabic">صفّق</span>), jump (<span class="arabic">اقفز</span>), sit (<span class="arabic">اجلس</span>), stand (<span class="arabic">قف</span>), up (<span class="arabic">فوق</span>), down (<span class="arabic">تحت</span>).</p>
-        <div class="activity-item">
-            <h5>Discovery Challenge:</h5>
-            <ul>
-                <li>Focus on "head, shoulders, knees, toes, eyes, ears, mouth, nose." Use "Simon Says" for each.</li>
-            </ul>
+        <h3>Set 1: People & Greetings (<span class="arabic">الناس والتحيات</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Hello <span class="arabic">مرحباً</span></div>
+            <div class="word-item">Goodbye <span class="arabic">مع السلامة</span></div>
+            <div class="word-item">Mommy <span class="arabic">ماما</span></div>
+            <div class="word-item">Daddy <span class="arabic">بابا</span></div>
+            <div class="word-item">Boy <span class="arabic">ولد</span></div>
+            <div class="word-item">Girl <span class="arabic">بنت</span></div>
+            <div class="word-item">Friend <span class="arabic">صديق/صديقة</span></div>
+            <div class="word-item">I <span class="arabic">أنا</span></div>
+            <div class="word-item">You <span class="arabic">أنتِ/أنت</span></div>
+            <div class="word-item">He <span class="arabic">هو</span></div>
+            <div class="word-item">She <span class="arabic">هي</span></div>
         </div>
+        <h4>Activities:</h4>
         <div class="activity-item">
-            <h5>Sing & Play Challenge:</h5>
             <ul>
-                <li>"Head, Shoulders, Knees and Toes" song.</li>
-                <li>"Simon Says, jump up!" "Simon Says, sit down!"</li>
+                <li><strong>Greetings:</strong> Say "Hello" and "Goodbye" as you start and end sessions.</li>
+                <li><strong>Point to People:</strong> Point to family members in photos. "This is Mommy." (<span class="arabic">هذه ماما</span>).</li>
+                <li><strong>"I and You" Game:</strong> "I am happy." (<span class="arabic">أنا سعيد/ة</span>). Point to her: "You are happy." (<span class="arabic">أنتِ سعيدة</span>).</li>
+                <li><strong>Puppet Play:</strong> Use puppets to introduce boy/girl puppets.</li>
             </ul>
         </div>
 
-        <h3>Unit 2: Colors & Counting! (Weeks 3-4)</h3>
-        <h4>Vocabulary:</h4>
-        <p>Red (<span class="arabic">أحمر</span>), blue (<span class="arabic">أزرق</span>), yellow (<span class="arabic">أصفر</span>), green (<span class="arabic">أخضر</span>), one (<span class="arabic">واحد</span>), two (<span class="arabic">اثنين</span>), three (<span class="arabic">ثلاثة</span>), four (<span class="arabic">أربعة</span>), five (<span class="arabic">خمسة</span>).</p>
-        <div class="activity-item">
-            <h5>Discovery Challenge:</h5>
-            <ul>
-                <li>Introduce Red, Blue, Yellow. Show objects/flashcards. "This is red." "Touch red."</li>
-            </ul>
+        <h3>Set 2: Common Actions (<span class="arabic">أفعال شائعة</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Go <span class="arabic">اذهب/ي</span></div>
+            <div class="word-item">Come <span class="arabic">تعال/ي</span></div>
+            <div class="word-item">Sit <span class="arabic">اجلس/ي</span></div>
+            <div class="word-item">Stand <span class="arabic">قف/ي</span></div>
+            <div class="word-item">Eat <span class="arabic">كل/ي</span></div>
+            <div class="word-item">Drink <span class="arabic">اشرب/ي</span></div>
+            <div class="word-item">Sleep <span class="arabic">نم/نامي</span></div>
+            <div class="word-item">Play <span class="arabic">العب/ي</span></div>
+            <div class="word-item">See <span class="arabic">ارى/ترى</span></div>
+            <div class="word-item">Hear <span class="arabic">اسمع/تسمع</span></div>
         </div>
+        <h4>Activities:</h4>
         <div class="activity-item">
-            <h5>Sing & Play Challenge:</h5>
             <ul>
-                <li>"The Color Song" (e.g., "I see something blue!").</li>
-                <li>"Let's count our fingers! One, two, three!" (Count up to 5). "Find one blue block!"</li>
-            </ul>
-        </div>
-
-        <h3>Unit 3: Animals & Sounds! (Weeks 5-6)</h3>
-        <h4>Vocabulary:</h4>
-        <p>Dog (<span class="arabic">كلب</span>), cat (<span class="arabic">قطة</span>), cow (<span class="arabic">بقرة</span>), duck (<span class="arabic">بطة</span>), bird (<span class="arabic">طائر</span>), fish (<span class="arabic">سمكة</span>), woof (<span class="arabic">صوت الكلب</span>), meow (<span class="arabic">صوت القطة</span>), moo (<span class="arabic">صوت البقرة</span>), quack (<span class="arabic">صوت البطة</span>), fly (<span class="arabic">يطير</span>), swim (<span class="arabic">يسبح</span>).</p>
-        <div class="activity-item">
-            <h5>Discovery Challenge:</h5>
-            <ul>
-                <li>Show flashcards for dog, cat, duck. "This is a dog. Woof, woof!"</li>
-            </ul>
-        </div>
-        <div class="activity-item">
-            <h5>Sing & Play Challenge:</h5>
-            <ul>
-                <li>"Old MacDonald Had a Farm."</li>
-                <li>"What does the cow say? Moo! Moo!" "Can you fly like a bird?" (Do the action).</li>
+                <li><strong>Total Physical Response (TPR):</strong> Say "Sit!" (<span class="arabic">اجلسي!</span>) and demonstrate. She copies.</li>
+                <li><strong>Daily Routine Integration:</strong> "Time to eat." (<span class="arabic">وقت الأكل</span>). "Let's go." (<span class="arabic">هيا نذهب</span>).</li>
+                <li><strong>"I see..." Game:</strong> Point to an object and say "I see a ball." (<span class="arabic">أنا أرى كرة</span>).</li>
             </ul>
         </div>
 
-        <h3>Unit 4: My Family & Feelings! (Weeks 7-8)</h3>
-        <h4>Vocabulary:</h4>
-        <p>Mommy (<span class="arabic">ماما</span>), Daddy (<span class="arabic">بابا</span>), sister (<span class="arabic">أخت</span>), brother (<span class="arabic">أخ</span>), happy (<span class="arabic">سعيد</span>), sad (<span class="arabic">حزين</span>), sleepy (<span class="arabic">نعسان</span>), hungry (<span class="arabic">جائع</span>), thank you (<span class="arabic">شكراً</span>), please (<span class="arabic">رجاءً</span>).</p>
+        <h3>Set 3: Basic Objects (<span class="arabic">أشياء أساسية</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Ball <span class="arabic">كرة</span></div>
+            <div class="word-item">Toy <span class="arabic">لعبة</span></div>
+            <div class="word-item">Book <span class="arabic">كتاب</span></div>
+            <div class="word-item">Car <span class="arabic">سيارة</span></div>
+            <div class="word-item">House <span class="arabic">بيت</span></div>
+            <div class="word-item">Bed <span class="arabic">سرير</span></div>
+            <div class="word-item">Table <span class="arabic">طاولة</span></div>
+            <div class="word-item">Chair <span class="arabic">كرسي</span></div>
+            <div class="word-item">Door <span class="arabic">باب</span></div>
+            <div class="word-item">Window <span class="arabic">نافذة</span></div>
+        </div>
+        <h4>Activities:</h4>
         <div class="activity-item">
-            <h5>Discovery Challenge:</h5>
             <ul>
-                <li>Show photos of Mommy, Daddy. "This is Mommy." Make happy/sad faces. "I am happy!"</li>
+                <li><strong>"Show Me" Game:</strong> "Show me the ball." (<span class="arabic">أريني الكرة</span>).</li>
+                <li><strong>Point & Say:</strong> Point to items in the room, say the English word, then Arabic.</li>
+                <li><strong>Magic Bag:</strong> Put an object in a bag. "What is it?" Pull it out: "It's a car!" (<span class="arabic">إنها سيارة!</span>).</li>
             </ul>
         </div>
+
+        <h3>Set 4: Colors (<span class="arabic">الألوان</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Red <span class="arabic">أحمر</span></div>
+            <div class="word-item">Blue <span class="arabic">أزرق</span></div>
+            <div class="word-item">Yellow <span class="arabic">أصفر</span></div>
+            <div class="word-item">Green <span class="arabic">أخضر</span></div>
+            <div class="word-item">Black <span class="arabic">أسود</span></div>
+            <div class="word-item">White <span class="arabic">أبيض</span></div>
+            <div class="word-item">Brown <span class="arabic">بني</span></div>
+            <div class="word-item">Pink <span class="arabic">وردي</span></div>
+            <div class="word-item">Purple <span class="arabic">بنفسجي</span></div>
+            <div class="word-item">Orange <span class="arabic">برتقالي</span></div>
+        </div>
+        <h4>Activities:</h4>
         <div class="activity-item">
-            <h5>Sing & Play Challenge:</h5>
             <ul>
-                <li>"How Are You?" song.</li>
-                <li>Use puppets to say "Hello, Mommy!" or "I am happy!" "Can you say 'Thank you'?" (Model it).</li>
+                <li><strong>Color Matching:</strong> "Find something red." (<span class="arabic">جدي شيئاً أحمر</span>).</li>
+                <li><strong>"I Spy":</strong> "I spy with my little eye something blue." (<span class="arabic">أنا أرى بعيني شيئاً أزرق</span>).</li>
+                <li><strong>Color Flashcards:</strong> Show and name colors.</li>
+            </ul>
+        </div>
+
+        <h3>Set 5: Numbers (<span class="arabic">الأرقام</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">One <span class="arabic">واحد</span></div>
+            <div class="word-item">Two <span class="arabic">اثنان</span></div>
+            <div class="word-item">Three <span class="arabic">ثلاثة</span></div>
+            <div class="word-item">Four <span class="arabic">أربعة</span></div>
+            <div class="word-item">Five <span class="arabic">خمسة</span></div>
+            <div class="word-item">Six <span class="arabic">ستة</span></div>
+            <div class="word-item">Seven <span class="arabic">سبعة</span></div>
+            <div class="word-item">Eight <span class="arabic">ثمانية</span></div>
+            <div class="word-item">Nine <span class="arabic">تسعة</span></div>
+            <div class="word-item">Ten <span class="arabic">عشرة</span></div>
+        </div>
+        <h4>Activities:</h4>
+        <div class="activity-item">
+            <ul>
+                <li><strong>Count Fingers/Toes:</strong> Count together in English, briefly say Arabic number.</li>
+                <li><strong>Count Objects:</strong> Count small groups of toys.</li>
+                <li><strong>Number Songs:</strong> Use counting songs (e.g., "One, Two, Buckle My Shoe").</li>
+            </ul>
+        </div>
+
+        <h3>Set 6: Animals (<span class="arabic">الحيوانات</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Dog <span class="arabic">كلب</span></div>
+            <div class="word-item">Cat <span class="arabic">قطة</span></div>
+            <div class="word-item">Cow <span class="arabic">بقرة</span></div>
+            <div class="word-item">Duck <span class="arabic">بطة</span></div>
+            <div class="word-item">Bird <span class="arabic">طائر</span></div>
+            <div class="word-item">Fish <span class="arabic">سمكة</span></div>
+            <div class="word-item">Lion <span class="arabic">أسد</span></div>
+            <div class="word-item">Elephant <span class="arabic">فيل</span></div>
+            <div class="word-item">Monkey <span class="arabic">قرد</span></div>
+            <div class="word-item">Bear <span class="arabic">دب</span></div>
+        </div>
+        <h4>Activities:</h4>
+        <div class="activity-item">
+            <ul>
+                <li><strong>Animal Sounds:</strong> "What does the dog say? Woof, woof!" (<span class="arabic">ماذا يقول الكلب؟</span>).</li>
+                <li><strong>Animal Flashcards/Toys:</strong> Show the animal, name it, make its sound.</li>
+                <li><strong>Animal Actions:</strong> "Fly like a bird." (<span class="arabic">طيري كطائر</span>).</li>
+            </ul>
+        </div>
+
+        <h3>Set 7: Food & Drink (<span class="arabic">طعام وشراب</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Apple <span class="arabic">تفاحة</span></div>
+            <div class="word-item">Banana <span class="arabic">موزة</span></div>
+            <div class="word-item">Water <span class="arabic">ماء</span></div>
+            <div class="word-item">Milk <span class="arabic">حليب</span></div>
+            <div class="word-item">Bread <span class="arabic">خبز</span></div>
+            <div class="word-item">Juice <span class="arabic">عصير</span></div>
+            <div class="word-item">Cookie <span class="arabic">كعكة (كوكيز)</span></div>
+            <div class="word-item">Egg <span class="arabic">بيضة</span></div>
+            <div class="word-item">Cheese <span class="arabic">جبنة</span></div>
+            <div class="word-item">Rice <span class="arabic">أرز</span></div>
+        </div>
+        <h4>Activities:</h4>
+        <div class="activity-item">
+            <ul>
+                <li><strong>Mealtime English:</strong> Name foods as you prepare/eat. "Here is your apple." (<span class="arabic">هذه تفاحتك</span>).</li>
+                <li><strong>Picture Identification:</strong> Use flashcards of food items. "Show me the milk." (<span class="arabic">أريني الحليب</span>).</li>
+            </ul>
+        </div>
+
+        <h3>Set 8: Adjectives & Descriptors (<span class="arabic">صفات ووصف</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">Big <span class="arabic">كبير</span></div>
+            <div class="word-item">Small <span class="arabic">صغير</span></div>
+            <div class="word-item">Happy <span class="arabic">سعيد</span></div>
+            <div class="word-item">Sad <span class="arabic">حزين</span></div>
+            <div class="word-item">Hot <span class="arabic">حار</span></div>
+            <div class="word-item">Cold <span class="arabic">بارد</span></div>
+            <div class="word-item">Clean <span class="arabic">نظيف</span></div>
+            <div class="word-item">Dirty <span class="arabic">متسخ</span></div>
+            <div class="word-item">New <span class="arabic">جديد</span></div>
+            <div class="word-item">Old <span class="arabic">قديم</span></div>
+        </div>
+        <h4>Activities:</h4>
+        <div class="activity-item">
+            <ul>
+                <li><strong>Opposites:</strong> Use two objects, "This is big." (<span class="arabic">هذا كبير</span>). "This is small." (<span class="arabic">هذا صغير</span>).</li>
+                <li><strong>Feelings Faces:</strong> Make happy/sad faces. "Are you happy?" (<span class="arabic">هل أنتِ سعيدة؟</span>).</li>
+                <li><strong>Touch & Feel:</strong> "This water is cold." (<span class="arabic">هذا الماء بارد</span>).</li>
+            </ul>
+        </div>
+
+        <h3>Set 9: Prepositions & Places (<span class="arabic">حروف الجر والأماكن</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">In <span class="arabic">في/داخل</span></div>
+            <div class="word-item">On <span class="arabic">على</span></div>
+            <div class="word-item">Under <span class="arabic">تحت</span></div>
+            <div class="word-item">Up <span class="arabic">فوق/أعلى</span></div>
+            <div class="word-item">Down <span class="arabic">تحت/أسفل</span></div>
+            <div class="word-item">Here <span class="arabic">هنا</span></div>
+            <div class="word-item">There <span class="arabic">هناك</span></div>
+            <div class="word-item">Near <span class="arabic">قريب</span></div>
+            <div class="word-item">Far <span class="arabic">بعيد</span></div>
+            <div class="word-item">Home <span class="arabic">منزل</span></div>
+        </div>
+        <h4>Activities:</h4>
+        <div class="activity-item">
+            <ul>
+                <li><strong>Object Placement (TPR):</strong> "Put the ball on the table." (<span class="arabic">ضعي الكرة على الطاولة</span>).</li>
+                <li><strong>Hide & Seek (Simple):</strong> "Is it under the chair?" (<span class="arabic">هل هي تحت الكرسي؟</span>).</li>
+                <li><strong>Movement:</strong> "Go up the stairs." (<span class="arabic">اصعدي الدرج للأعلى</span>).</li>
+            </ul>
+        </div>
+
+        <h3>Set 10: Question Words & More (<span class="arabic">كلمات استفهام والمزيد</span>)</h3>
+        <div class="word-list">
+            <div class="word-item">What <span class="arabic">ماذا</span></div>
+            <div class="word-item">Who <span class="arabic">من</span></div>
+            <div class="word-item">Where <span class="arabic">أين</span></div>
+            <div class="word-item">Why <span class="arabic">لماذا</span></div>
+            <div class="word-item">Yes <span class="arabic">نعم</span></div>
+            <div class="word-item">No <span class="arabic">لا</span></div>
+            <div class="word-item">Please <span class="arabic">رجاءً</span></div>
+            <div class="word-item">Thank you <span class="arabic">شكراً</span></div>
+            <div class="word-item">My <span class="arabic">لي</span></div>
+            <div class="word-item">Your <span class="arabic">لكِ/لك</span></div>
+        </div>
+        <h4>Activities:</h4>
+        <div class="activity-item">
+            <ul>
+                <li><strong>Daily Questioning:</strong> "What is this?" (<span class="arabic">ما هذا؟</span>) (You answer in English).</li>
+                <li><strong>Polite Phrases:</strong> Prompt her to use "Please" and "Thank you" when she wants something. "Say 'Please'!" (<span class="arabic">قولي 'رجاءً'!</span>).</li>
+                <li><strong>Possession:</strong> "This is my ball." (<span class="arabic">هذه كرتي</span>). "This is your toy." (<span class="arabic">هذه لعبتك</span>).</li>
+            </ul>
+        </div>
+
+        ---
+
+        <h2>How to Conduct Each 10-15 Minute Session:</h2>
+        <div class="session-flow">
+            <h4>1. Greeting & Warm-up (2 min):</h4>
+            <ul>
+                <li>Say "Hello!" (<span class="arabic">مرحباً</span>).</li>
+                <li>Briefly review a few familiar words/actions from previous sets (e.g., "Sit!" (<span class="arabic">اجلسي!</span>), "Clap!" (<span class="arabic">صفّقي!</span>)).</li>
+            </ul>
+
+            <h4>2. New Word Introduction (5-7 min):</h4>
+            <ul>
+                <li>Choose 5-10 new words from the current set.</li>
+                <li><strong>For each word:</strong>
+                    <ul>
+                        <li>Show the flashcard/object clearly.</li>
+                        <li>Say the **English word slowly and clearly.**</li>
+                        <li>Immediately say its **Arabic meaning.**</li>
+                        <li>Repeat the English word.</li>
+                        <li><em>Example:</em> (Show apple flashcard) "Apple." (<span class="arabic">تفاحة</span>). "Apple."</li>
+                        <li>Incorporate an action if possible (e.g., for "jump," you jump).</li>
+                    </ul>
+                </li>
+                <li>Go through the new words several times.</li>
+            </ul>
+
+            <h4>3. Review & Game (5-7 min):</h4>
+            <ul>
+                <li>Mix new words with previously learned words.</li>
+                <li>Play a simple game:
+                    <ul>
+                        <li><strong>"Show Me":</strong> "Show me the [dog]." (<span class="arabic">أريني الكلب</span>).</li>
+                        <li><strong>"What is it?":</strong> Hold up an object/flashcard. "What is it?" (<span class="arabic">ما هذا؟</span>) (You answer, or if she makes a sound, praise her!).</li>
+                        <li><strong>"Simon Says" (with new actions):</strong> "Simon says, eat!" (<span class="arabic">كل!</span>).</li>
+                    </ul>
+                </li>
+                <li>Praise all her efforts to point, look, or make sounds.</li>
+            </ul>
+
+            <h4>4. Goodbye & Review (1 min):</h4>
+            <ul>
+                <li>Say "Goodbye!" (<span class="arabic">مع السلامة</span>).</li>
+                <li>Quickly point to 2-3 random items and name them one last time.</li>
             </ul>
         </div>
 
         <div class="quest-guide-tips">
-            <h2>Game Rules for the Quest Guide (You!):</h2>
+            <h2>Tips for Success:</h2>
             <ul>
-                <li>**Keep it FUN & ENERGETIC:** Your enthusiasm is contagious!</li>
-                <li>**Praise, Praise, Praise!** For every effort, every sound, every action. "Good job!" "Excellent!" "Wonderful!" <span class="arabic">(أحسنتِ! رائع!)</span></li>
-                <li>**Low Pressure:** Never force her to speak. Focus on her listening and reacting. Speaking will come naturally when she feels comfortable.</li>
-                <li>**Arabic as a Bridge:** Use it *sparingly* and *briefly* only when she's truly stuck on understanding a new word or instruction. Immediately return to English.</li>
-                <li>**TPR First:** Always demonstrate the action yourself as you say the English word/command.</li>
-                <li>**Repeat & Review:** Don't hesitate to repeat words, songs, and activities across different quests. Repetition builds strong foundations.</li>
-                <li>**Follow Her Lead:** If she's captivated by a specific toy or activity, weave it into the quest! If she's losing interest, move to a different challenge or end the quest for the day.</li>
-                <li>**Flexibility is Key:** This is a guide. If a quest goes off-script because she's having fun with something else in English, that's a huge win!</li>
+                <li><strong>Patience is Paramount:</strong> Don't expect immediate speaking. Understanding comes first.</li>
+                <li><strong>Make it Fun:</strong> Keep the atmosphere light and playful. If she's losing interest, stop and try again later.</li>
+                <li><strong>Consistent Repetition:</strong> This is how young brains absorb language. Don't be afraid to repeat words daily.</li>
+                <li><strong>No Direct Correction:</strong> If she tries to say a word and gets it wrong, just repeat the correct English word naturally and positively.</li>
+                <li><strong>Integrate into Daily Life:</strong> Point to objects around the house and name them in English, then Arabic. "This is a chair." (<span class="arabic">هذا كرسي</span>). "Here is your milk." (<span class="arabic">هذا حليبك</span>).</li>
+                <li><strong>Use Gestures & Facial Expressions:</strong> These help convey meaning alongside your words.</li>
             </ul>
         </div>
 
         <p style="text-align: center; margin-top: 40px; font-size: 0.9em; color: #777;">
-            Enjoy your English Adventure Quest! Created for you and your amazing daughter.
+            By consistently exposing her to these common words in a supportive and fun environment, you'll be building a powerful foundation for her English language journey!
         </p>
 
     </div>
 </body>
 </html>
+```
